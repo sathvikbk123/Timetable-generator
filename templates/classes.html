@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class timetables</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body style="padding-top: 40px;">
+
+
+	<h1 style="text-align: center;">Class 5 A</h1>
+	<table style="width: 80%; margin: auto;" border = 1 class="table table-dark table-hover table-striped">
+		<thead>
+   			<tr>
+      		<th scope="col">Day</th>
+      		<th scope="col">First Period</th>
+      		<th scope="col">Second Period</th>
+      		<th scope="col">Third Period</th>
+      		<th scope="col">Fourth Period</th>
+      		<th scope="col">Fifth Period</th>
+      		<th scope="col">Sixth Period</th>
+      		<th scope="col">Seventh Period</th>
+      		
+    		</tr>
+  		</thead>
+	  {% for cell in class_TT_5a %}
+	  <tr>
+	    <td scope="col"> {{cell[7]}} </td>
+	    <td scope="col"> {{cell[0]}} </td>
+	    <td scope="col"> {{cell[1]}} </td>
+	    <td scope="col"> {{cell[2]}} </td>
+	    <td scope="col"> {{cell[3]}} </td>
+	    <td scope="col"> {{cell[4]}} </td>
+	    <td scope="col"> {{cell[5]}} </td>
+	    <td scope="col"> {{cell[6]}} </td>
+	  </tr>
+	  {% endfor %}
+	</table><br>
+
+	<h1 style="text-align: center;">Class 5 B</h1>
+	<table style="width: 80%; margin: auto;" border = 1 class="table table-dark table-hover table-striped">
+		<thead>
+   			<tr>
+      		<th scope="col">Day</th>
+      		<th scope="col">First Period</th>
+      		<th scope="col">Second Period</th>
+      		<th scope="col">Third Period</th>
+      		<th scope="col">Fourth Period</th>
+      		<th scope="col">Fifth Period</th>
+      		<th scope="col">Sixth Period</th>
+      		<th scope="col">Seventh Period</th>
+      		
+    		</tr>
+  		</thead>
+	  {% for cell in class_TT_5b %}
+	  
+	  <tr>
+
+	    <td scope="col"> {{cell[7]}} </td>
+	    <td scope="col"> {{cell[0]}} </td>
+	    <td scope="col"> {{cell[1]}} </td>
+	    <td scope="col"> {{cell[2]}} </td>
+	    <td scope="col"> {{cell[3]}} </td>
+	    <td scope="col"> {{cell[4]}} </td>
+	    <td scope="col"> {{cell[5]}} </td>
+	    <td scope="col"> {{cell[6]}} </td>
+	  </tr>
+	
+	  {% endfor %}
+	</table><br>
+
+	<h1 style="text-align: center;">Class 5 C</h1>
+	<table style="width: 80%; margin: auto;" border = 1 class="table table-dark table-hover table-striped">
+		<thead>
+   			<tr>
+      		<th scope="col">Day</th>
+      		<th scope="col">First Period</th>
+      		<th scope="col">Second Period</th>
+      		<th scope="col">Third Period</th>
+      		<th scope="col">Fourth Period</th>
+      		<th scope="col">Fifth Period</th>
+      		<th scope="col">Sixth Period</th>
+      		<th scope="col">Seventh Period</th>
+      		
+    		</tr>
+  		</thead>
+	  {% for cell in class_TT_5c %}
+	  <tr>
+
+	    <td scope="col"> {{cell[7]}} </td>
+	    <td scope="col"> {{cell[0]}} </td>
+	    <td scope="col"> {{cell[1]}} </td>
+	    <td scope="col"> {{cell[2]}} </td>
+	    <td scope="col"> {{cell[3]}} </td>
+	    <td scope="col"> {{cell[4]}} </td>
+	    <td scope="col"> {{cell[5]}} </td>
+	    <td scope="col"> {{cell[6]}} </td>
+	  </tr>
+	  {% endfor %}
+	</table><br>
+<!--
+	<br>
+	<br>
+	<h1>Class 5 B</h1>
+	<table border = 1>
+	  {% for cell in class_TT_5b %}
+	  <tr>
+	    <td> {{cell[0]}} </td>
+	    <td> {{cell[1]}} </td>
+	    <td> {{cell[2]}} </td>
+	    <td> {{cell[3]}} </td>
+	    <td> {{cell[4]}} </td>
+	    <td> {{cell[5]}} </td>
+	    <td> {{cell[6]}} </td>
+	    <td> {{cell[7]}} </td>
+	    <td> {{cell[8]}} </td>
+	  </tr>
+	  {% endfor %}
+	</table>
+
+	<br>
+	<br>
+	<h1>Class 5 C</h1>
+
+	<table border = 1>
+	  {% for cell in class_TT_5c %}
+	  <tr>
+	    <td> {{cell[0]}} </td>
+	    <td> {{cell[1]}} </td>
+	    <td> {{cell[2]}} </td>
+	    <td> {{cell[3]}} </td>
+	    <td> {{cell[4]}} </td>
+	    <td> {{cell[5]}} </td>
+	    <td> {{cell[6]}} </td>
+	    <td> {{cell[7]}} </td>
+	    <td> {{cell[8]}} </td>
+	  </tr>
+	  {% endfor %}
+	</table>
+-->
+	<br>
+	<br>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
+
